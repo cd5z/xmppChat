@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -45,7 +45,7 @@
                                         </constraints>
                                         <state key="normal" title="登陆"/>
                                         <connections>
-                                            <segue destination="dxh-mq-Aff" kind="presentation" id="qkE-SO-X4P"/>
+                                            <action selector="loginButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hfT-F8-QbQ"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="您的用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rHL-Ej-PhC">
@@ -114,6 +114,11 @@
                             <constraint firstItem="WV5-5I-vhd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wBu-ou-yc8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="iconView" destination="SFd-tI-FIC" id="bky-Fh-hvQ"/>
+                        <outlet property="pswField" destination="Yf9-yv-K5g" id="eAX-6H-srp"/>
+                        <outlet property="userField" destination="rHL-Ej-PhC" id="gep-Ll-xrZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -255,10 +260,10 @@
             </objects>
             <point key="canvasLocation" x="975" y="791"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="md8-OB-N7R">
             <objects>
-                <viewController id="6gb-Ki-Qgw" sceneMemberID="viewController">
+                <viewController id="6gb-Ki-Qgw" customClass="RegisterViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rav-ma-SK4"/>
                         <viewControllerLayoutGuide type="bottom" id="pVc-7D-66v"/>
