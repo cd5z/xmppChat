@@ -12,7 +12,7 @@ class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let buttonItem = UIBarButtonItem(title: "返回", style:UIBarButtonItemStyle.Bordered, target: self, action: "backToMain")
+        let buttonItem = UIBarButtonItem(title: "返回", style:UIBarButtonItemStyle.Bordered, target: self, action: #selector(RegisterViewController.backToMain))
         self.navigationItem.leftBarButtonItem = buttonItem;
 
     }

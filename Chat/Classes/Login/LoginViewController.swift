@@ -17,6 +17,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.iconView.image = UIImage(named: "ihead_007")
         // Do any additional setup after loading the view.
     }
     
@@ -33,7 +34,7 @@ class LoginViewController: UIViewController {
         
         XMPPManager.sharedXMPPManager.xmppLogin(userField.text!, password: pswField.text!)
 
-        
+        self.performSegueWithIdentifier("presentHomePage", sender: self)
     }
 
     /*

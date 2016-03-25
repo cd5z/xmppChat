@@ -241,7 +241,7 @@ class BuddyListViewController: UITableViewController, StatusDelegate, MessageDel
         //查找相应好友的未读条数
         for msg in unreadList {
             if ( name == msg.from ) {
-                unreads++
+                unreads += 1
             }
         }
         
